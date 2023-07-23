@@ -1,0 +1,75 @@
+@import '@fontsource/fira-mono';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:wght@500&display=swap');
+
+:root {
+	--font-body: 'Noto Sans', sans-serif;
+	--font-mono: 'Noto Sans', sans-serif;
+	--color-bg-0: rgb(210, 228, 202);
+	--color-bg-1: hsl(209, 36%, 86%);
+	--color-bg-2: hsl(224, 44%, 95%);
+	--color-theme-1: #ff3e00;
+	--color-theme-2: #4075a6;
+	--color-text: rgb(255, 230, 0);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background: hsla(202, 100%, 56%, 1);
+	background: linear-gradient(270deg, hsla(202, 100%, 56%, 1) 0%, hsla(156, 100%, 28%, 1) 100%);
+	background: -moz-linear-gradient(270deg, hsla(202, 100%, 56%, 1) 0%, hsla(156, 100%, 28%, 1) 100%);
+	background: -webkit-linear-gradient(270deg, hsla(202, 100%, 56%, 1) 0%, hsla(156, 100%, 28%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1DACFF", endColorstr="#008F56", GradientType=1 );
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	color: var(--color-theme-1);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-family: var(--font-mono);
+	background-color: rgb(199, 199, 199);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: #000;
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
